@@ -51,6 +51,10 @@ html {
                                         top: 20%;
                                     }
 
+                                    a {
+                                        display: flex;
+                                    }
+
                                 }
                             }
 
@@ -58,8 +62,10 @@ html {
                                 height: 20%;
 
                                 a {
+                                    display: none;
                                     top: 42%;
-                                    left: 40%;
+                                    left: 50%;
+                                    transform: translateX(-50%);
                                 }
                             }
                         }
@@ -218,7 +224,7 @@ html {
                                 opacity: 0;
 
                                 &:hover,&:active,&.active {
-                                    transform: scale(1.1);
+                                    transform: scale(1.1) translateX(-50%);
 
                                     i {
                                         animation: shakeI 1s linear 0s infinite;

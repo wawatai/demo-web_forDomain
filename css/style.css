@@ -349,12 +349,20 @@ html body main .mainBox ul.forWeb li:hover h1, html body main .mainBox ul.forWeb
 html body main .mainBox ul.forWeb li:hover h1 p, html body main .mainBox ul.forWeb li:active h1 p, html body main .mainBox ul.forWeb li.active h1 p {
   top: 20%;
 }
+html body main .mainBox ul.forWeb li:hover h1 a, html body main .mainBox ul.forWeb li:active h1 a, html body main .mainBox ul.forWeb li.active h1 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 html body main .mainBox ul.forWeb li h1 {
   height: 20%;
 }
 html body main .mainBox ul.forWeb li h1 a {
+  display: none;
   top: 42%;
-  left: 40%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 html body main .mainBox ul.forMobile {
   -ms-grid-columns: (1fr)[5];
@@ -499,8 +507,8 @@ html body main .mainBox ul li h1 a {
   opacity: 0;
 }
 html body main .mainBox ul li h1 a:hover, html body main .mainBox ul li h1 a:active, html body main .mainBox ul li h1 a.active {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.1) translateX(-50%);
+          transform: scale(1.1) translateX(-50%);
 }
 html body main .mainBox ul li h1 a:hover i, html body main .mainBox ul li h1 a:active i, html body main .mainBox ul li h1 a.active i {
   -webkit-animation: shakeI 1s linear 0s infinite;
@@ -1063,12 +1071,6 @@ particle {
   html body main .mainBox ul.forWeb li:hover h1 a, html body main .mainBox ul.forWeb li:active h1 a, html body main .mainBox ul.forWeb li.active h1 a {
     width: 40px;
     height: 40px;
-  }
-  html body main .mainBox ul.forWeb li:hover h1 a:nth-of-type(1), html body main .mainBox ul.forWeb li:active h1 a:nth-of-type(1), html body main .mainBox ul.forWeb li.active h1 a:nth-of-type(1) {
-    left: 28%;
-  }
-  html body main .mainBox ul.forWeb li:hover h1 a:nth-of-type(2), html body main .mainBox ul.forWeb li:active h1 a:nth-of-type(2), html body main .mainBox ul.forWeb li.active h1 a:nth-of-type(2) {
-    right: 28%;
   }
   html body main .mainBox ul.forWeb li:hover h1 a i, html body main .mainBox ul.forWeb li:active h1 a i, html body main .mainBox ul.forWeb li.active h1 a i {
     font-size: 24px;
