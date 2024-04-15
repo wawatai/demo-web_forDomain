@@ -1,0 +1,125 @@
+//header
+header {
+    width: 100%;
+    min-width: 1100px;
+    height: 90px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+
+    article {
+        width: 90%;
+        height: 100%;
+        margin: 0px auto;
+
+        //search
+        .inputBox {
+            float: left;
+            width: auto;
+            height: auto;
+            position: relative;
+            z-index: 2;
+            margin-top: 25px;
+
+            &:hover,&:active,&.active {
+                
+                input {
+                    width: 300px;
+                    background: $inputStyle_1_hoverBG;
+                    color: $inputStyle_1_hoverColor;
+                    padding-left: 20px;
+
+                    &::placeholder {
+                        color: $inputStyle_1_hoverColor;
+                    }
+                }
+
+                span {
+                    background: $inputStyle_1_hoverIconBG;
+                    left: 84%
+                }
+            }
+
+            input {
+                width: 105px;
+                height: 40px;
+                @include inputStyle_1;
+            }
+
+            span {
+                display: block;
+                width: 50px;
+                height: 100%;
+                background: #374183;
+                box-shadow: 0px 0px 8px 0px #00000045;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                left: 0px;
+                transition: 0.6s all;
+                cursor: pointer; 
+
+                i {
+                    color: $mainIconColor_2;
+                    font-size: 24px;
+                }
+            }
+        }
+
+        //切換按鈕
+        .btnBox {
+            float: right;
+            width: auto;
+            height: auto;
+            position: relative;
+            z-index: 6;
+            margin-top: 25px;
+
+            button {
+                width: auto;
+                height: 40px;
+                @include btnStyle_1;
+                margin-right: 20px;
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                i {
+                    color: $mainIconColor_2;
+                    font-size: 28px;
+                }
+
+                span {
+                    color: $mainColor_1;
+                    font-size: 14px;
+                    font-weight: bold;
+                    vertical-align: super;
+                    letter-spacing: 1px;
+                    transition: 0.3s all;
+                    padding-left: 8px;
+                }
+            }
+        }
+
+        //logo
+        .logo {
+            width: 224px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            position: relative;
+            z-index: 3;
+            cursor: pointer;
+            margin: 0px auto;
+
+            div {
+                width: 100%;
+                height: 72px;
+            }
+        }
+    }
+}

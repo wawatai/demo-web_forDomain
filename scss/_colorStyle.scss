@@ -1,0 +1,94 @@
+$BG: #0a102e;
+$BG_under: linear-gradient(135deg,#020409 25%,#212750 100%);
+$mainBG_1: linear-gradient(to top,#ed47f3 16%,#8a5efa 60%,#15bde7 96%);
+$mainBG_2: linear-gradient(to bottom, #4C6FD3 0%, #313C87 100%);
+$mainBG_3: #ffffff;
+
+$mainColor_1: #ffffff;
+
+$mainShadow_1: #0000004d;
+$mainShadow_2: #ffffff80;
+
+$mainIconColor_1: #374183;
+$mainIconColor_2: #ffffff;
+
+$loadingColor: #35c4f0;
+
+@mixin inputStyle_1 {
+    background: #2d325a;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 0px 8px 0px #00000045;
+    color: #ffffff;
+    font-size: 15px;
+    transition: 0.4s all;
+    padding-left: 60px;
+
+    &::placeholder {
+        color: #ffffff;
+    }
+}
+$inputStyle_1_hoverBG: #ffffff;
+$inputStyle_1_hoverColor: #202342;
+$inputStyle_1_hoverIconBG: #1f69f0;
+
+@mixin btnStyle_1 {
+    background: #313a75;
+    border-radius: 30px;
+    position: relative;
+    transition: 0.3s all;
+    overflow: hidden;
+    padding: 0px 15px;
+    z-index: 1;
+
+    &:hover,&:active,&.active {
+
+        &::before {
+            width: 100%;
+            opacity: 1;
+        }
+    }
+
+    &::before {
+        opacity: 0;
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 0%;
+        height: 100%;
+        background: linear-gradient(to right,#ed47f3 16%,#8a5efa 60%,#15bde7 96%);
+        transition: 0.5s all;
+        z-index: -1;
+    }
+}
+
+@mixin scrollBar_1 {
+    &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #333333;
+        border-radius: 30px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+}
+
+@mixin goTop {
+    background: #ffffff;
+    border: solid 2px #828282;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s all;
+    opacity: 0;
+    pointer-events: none;
+}
+$goTop_IconColor: #41515d;

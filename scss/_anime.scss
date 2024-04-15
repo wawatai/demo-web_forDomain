@@ -1,0 +1,134 @@
+//主物件hover時i抖動效果
+@keyframes shakeI {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(15deg);
+    }
+    
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75%{
+        transform: rotate(-15deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+//入場動畫環繞動
+@keyframes around2 {
+    0% {
+        transform: rotateX(55deg) rotateY(-25deg) rotateZ(0deg) rotate(-90deg);
+    }
+
+    100% {
+        transform: rotateX(55deg) rotateY(-25deg) rotateZ(360deg) rotate(-90deg);
+    }
+}
+
+//入場動畫碎片繞動
+@keyframes innerRound {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+//入場前置動畫
+@keyframes ballJump {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    60% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes starJump {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes stop {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes line1 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+@keyframes line2 {
+    0% {
+        height: 0%;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes btnJump {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes move {
+    0% {
+      left:0;
+      opacity:0;
+    }
+
+    35% {
+        left: 41%; 
+        transform:rotate(0deg);
+        opacity:1;
+    }
+
+    65% {
+        left:59%; 
+        transform:rotate(0deg); 
+        opacity:1;
+    }
+
+    100% {
+        left:100%; 
+        transform:rotate(-180deg);
+        opacity:0;
+    }
+}
