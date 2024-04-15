@@ -1071,6 +1071,7 @@ particle {
   html body main .mainBox ul.forWeb li:hover h1 a, html body main .mainBox ul.forWeb li:active h1 a, html body main .mainBox ul.forWeb li.active h1 a {
     width: 40px;
     height: 40px;
+    top: 41%;
   }
   html body main .mainBox ul.forWeb li:hover h1 a i, html body main .mainBox ul.forWeb li:active h1 a i, html body main .mainBox ul.forWeb li.active h1 a i {
     font-size: 24px;
