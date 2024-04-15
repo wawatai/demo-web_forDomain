@@ -343,29 +343,18 @@ html body main .mainBox ul.forWeb {
 html body main .mainBox ul.forWeb li {
   padding-bottom: 67%;
 }
-html body main .mainBox ul.forWeb li.hoverA a {
-  top: 35%;
-}
 html body main .mainBox ul.forWeb li:hover h1, html body main .mainBox ul.forWeb li:active h1, html body main .mainBox ul.forWeb li.active h1 {
   height: 60%;
 }
 html body main .mainBox ul.forWeb li:hover h1 p, html body main .mainBox ul.forWeb li:active h1 p, html body main .mainBox ul.forWeb li.active h1 p {
   top: 20%;
 }
-html body main .mainBox ul.forWeb li:hover h1 a:nth-of-type(1), html body main .mainBox ul.forWeb li:active h1 a:nth-of-type(1), html body main .mainBox ul.forWeb li.active h1 a:nth-of-type(1) {
-  left: 25%;
-}
-html body main .mainBox ul.forWeb li:hover h1 a:nth-of-type(2), html body main .mainBox ul.forWeb li:active h1 a:nth-of-type(2), html body main .mainBox ul.forWeb li.active h1 a:nth-of-type(2) {
-  right: 25%;
-}
 html body main .mainBox ul.forWeb li h1 {
   height: 20%;
 }
-html body main .mainBox ul.forWeb li h1 a:nth-of-type(1) {
-  left: 5%;
-}
-html body main .mainBox ul.forWeb li h1 a:nth-of-type(2) {
-  right: 5%;
+html body main .mainBox ul.forWeb li h1 a {
+  top: 42%;
+  left: 40%;
 }
 html body main .mainBox ul.forMobile {
   -ms-grid-columns: (1fr)[5];
